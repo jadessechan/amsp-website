@@ -3078,7 +3078,8 @@
 
 		#header .logo {
 			display: inline-block;
-			height: inherit;
+			height: 100%;
+			width: initial;
 			left: 1.25em;
 			line-height: inherit;
 			margin: 0;
@@ -3792,7 +3793,7 @@
 			color: #444;
 		}
 
-			.post.style1 input, .post.style1 select, .post.style1 textarea {
+			/* .post.style1 input, .post.style1 select, .post.style1 textarea {
 				color: black;
 			}
 
@@ -3808,7 +3809,7 @@
 				color: black;
 			} */
 
-			post.style1 blockquote {
+			/* .post.style1 blockquote {
 				border-left-color: rgba(144, 144, 144, 0.25);
 			}
 
@@ -4351,7 +4352,7 @@
 
 				.post.style3.invert .image {
 					background-color: #9b59b6;
-				}
+				} */
 
 /* Responsive Design */
 	@media screen and (max-width: 1280px) {
@@ -4438,44 +4439,83 @@
 		font-weight: 400;
 	}
 
-/* Temoignages */
-.temoignages {
-	margin: 5% 15% 5% 15%;
-	display: flex;
-}
-	.flex-child {
-		flex: 1;
-		text-align: justify;
-		border: 2px solid rgb(230, 167, 13);
-		border-radius: 10px;
-		padding: 1em;
+/* Partners */
+	#partners {
+		display: flex;
+		margin: 5em 5em 2em 9em;
+		margin-top: 5em;
 	}
+		#partners img {
+			width: 15em; 
+			height: 5em; 
+			overflow: hidden;
+			margin-right: 3em;
+		}
 
-	.flex-child:first-child {
-		margin-right: 50px;
+/* Temoignages */
+	.temoignages {
+		margin: 5% 15% 5% 15%;
+		display: flex;
 	}
+		.flex-child {
+			flex: 1;
+			text-align: justify;
+			border: 2px solid rgb(230, 167, 13);
+			border-radius: 10px;
+			padding: 1em;
+		}
+
+		.flex-child:first-child {
+			margin-right: 50px;
+		}
 
 
 /* Team */
-.team {
-	margin: 5% 15% 5% 15%;
-	display: flex;
-}
-	.flex-child {
-		flex: 1;
-		text-align: justify;
-		/* border: 2px solid rgb(230, 167, 13); */
-		/* border-radius: 10px; */
-		background-color: rgb(253, 250, 241);
-		padding: 1em;
+	.team {
+		margin: 5% 15% 5% 15%;
+		display: flex;
+	}
+		.team div {
+			text-align: center;
+		}
+		.flex-child {
+			flex: 1;
+			text-align: justify;
+			background-color: rgb(253, 250, 241);
+			padding: 1em;
+		}
+
+		.flex-child:first-child {
+			margin-right: 50px;
+		}
+
+		#headshot {
+			border-radius: 50%;
+			width: 180px; 
+			height: 180px; 
+			overflow: hidden;
+		}
+
+/* Team Profiles */
+	#profile {
+		border: 2px solid rgb(230, 167, 13);
+		height: inherit;
+		width: 15%;
+		border-radius: 50%;
+		margin-top: 2em;
+		margin-bottom: 2em;
 	}
 
-	.flex-child:first-child {
-		margin-right: 50px;
+	#title {
+		text-align: center; 
+		text-justify: center;
+	}
+
+	#bio {
+		margin: 1em 5em 4em 5em;;
 	}
 
 /* Footer */
-
 	#footer {
 		padding: 4em 2em 2em 5em;
 		background: rgb(32, 54, 87);
